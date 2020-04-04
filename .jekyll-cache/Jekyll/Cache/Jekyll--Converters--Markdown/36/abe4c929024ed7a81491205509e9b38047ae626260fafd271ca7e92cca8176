@@ -1,0 +1,17 @@
+I"�<h1 id="introduction">Introduction</h1>
+
+<p>Here is the text of your introduction.</p>
+
+<script type="math/tex; mode=display">\label{simple_equation}
+    \alpha = \sqrt{ \beta }</script>
+
+<h2 id="subsection-heading-here">Subsection Heading Here</h2>
+
+<p>Write your subsection text here.</p>
+
+<p><img src="myfigure" alt="Simulation Results" />{#simulationfigure width=”3.0in”}</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Write your conclusion here.</p>
+:ET
