@@ -1,11 +1,11 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Sidey",
-    "home_page_url": "http://localhost:4000/",
-    "feed_url": "http://localhost:4000/feed.json",
-    "description": "Simple and minimalistic jekyll blogging theme.",
-    "icon": "http://localhost:4000/apple-touch-icon.png",
-    "favicon": "http://localhost:4000/favicon.ico",
+    "title": "Thoughts",
+    "home_page_url": "/https://www.apjd.de/",
+    "feed_url": "/https://www.apjd.de/feed.json",
+    "description": "Prinzipiells Denken.",
+    "icon": "/https://www.apjd.de/apple-touch-icon.png",
+    "favicon": "/https://www.apjd.de/favicon.ico",
     "expired": false,
     
     "author": "{"twitter"=>nil, "name"=>nil, "avatar"=>nil, "email"=>nil, "url"=>nil}",
@@ -13,12 +13,12 @@
 "items": [
     
         {
-            "id": "http://localhost:4000/2020/04/04/testing-latex",
+            "id": "/https://www.apjd.de/2020/04/04/testing-latex",
             "title": "Introduction to LaTeX",
             "summary": null,
             "content_text": "IntroductionHere is the text of your introduction.Subsection Heading HereWrite your subsection text here.{#simulationfigure width=”3.0in”}ConclusionWrite your conclusion here.",
             "content_html": "<h1 id=\"introduction\">Introduction</h1><p>Here is the text of your introduction.</p><script type=\"math/tex; mode=display\">\\label{simple_equation}    \\alpha = \\sqrt{ \\beta }</script><h2 id=\"subsection-heading-here\">Subsection Heading Here</h2><p>Write your subsection text here.</p><p><img src=\"myfigure\" alt=\"Simulation Results\" />{#simulationfigure width=”3.0in”}</p><h1 id=\"conclusion\">Conclusion</h1><p>Write your conclusion here.</p>",
-            "url": "http://localhost:4000/2020/04/04/testing-latex",
+            "url": "/https://www.apjd.de/2020/04/04/testing-latex",
             
             
             

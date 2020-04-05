@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Sidey</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2020-04-04T12:47:33+02:00</updated>
- <id>http://localhost:4000</id>
+ <title>Thoughts</title>
+ <link href="https://www.apjd.de/atom.xml" rel="self"/>
+ <link href="https://www.apjd.de/"/>
+ <updated>2020-04-05T02:02:09+02:00</updated>
+ <id></id>
  <author>
    <name></name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Introduction to LaTeX</title>
-   <link href="http://localhost:4000/2020/04/04/testing-latex"/>
+   <link href="https://www.apjd.de/2020/04/04/testing-latex"/>
    <updated>2020-04-04T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/04/04/Testing-Latex</id>
+   <id>/2020/04/04/Testing-Latex</id>
    <content type="html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;Here is the text of your introduction.&lt;/p&gt;
