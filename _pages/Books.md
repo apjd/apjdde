@@ -3,7 +3,7 @@ layout: page
 title: Books
 ---
 
-### Currently reading:
+### Reading:
   - "Electrons in Solids" by Hendrik Bluhm, Thomas Brückel, Markus Morgenstern, Gero von Plessen and Christoph Stampfer
   - "How not to be wrong" by Jordan Ellenberg
 
@@ -18,3 +18,4 @@ title: Books
   - "Thinking fast and slow" by Daniel Kahnemann
   - "Die Kunst des klugen Handelns" by Rolf Dobelli
   - "Risiko" by Gerd Gigerenzer
+  - "Surely You're Joking, Mr. Feynman!" by Richard Feynman

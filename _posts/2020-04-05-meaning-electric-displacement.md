@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meaning of the Electric Displacement
+title: The meaning of the Electric Displacement
 description:
 summary: The electric displacement $$D$$ describes the strength of the electric field inside a material.
 tags: [physics]

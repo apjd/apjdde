@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Thoughts</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2020-04-05T15:20:56+02:00</updated>
- <id>http://localhost:4000</id>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2020-04-05T23:52:51+02:00</updated>
+ <id></id>
  <author>
    <name>apjd</name>
    <email></email>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>Meaning of the Electric Displacement</title>
-   <link href="http://localhost:4000/2020/04/05/meaning-electric-displacement"/>
+   <title>The meaning of the Electric Displacement</title>
+   <link href="/2020/04/05/meaning-electric-displacement"/>
    <updated>2020-04-05T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/04/05/meaning-electric-displacement</id>
+   <id>/2020/04/05/meaning-electric-displacement</id>
    <content type="html">&lt;p&gt;Consider the simplest capacitor as shown in the figure. Between the two plates a dielectric material (non-conductor) is placed. As the electric field of the capacitor passes through the material, it induces electric dipole moments. The sum of the induced dipole moments per volume is called &lt;em&gt;Polarization&lt;/em&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P = \frac{\sum{ex(t)}}{V}&lt;/script&gt;,&lt;/p&gt;
@@ -51,9 +51,9 @@
  
  <entry>
    <title>The use of exponential functions in everyday life</title>
-   <link href="http://localhost:4000/2020/04/05/importance-of-exponential-functions"/>
+   <link href="/2020/04/05/importance-of-exponential-functions"/>
    <updated>2020-04-05T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/04/05/importance-of-exponential-functions</id>
+   <id>/2020/04/05/importance-of-exponential-functions</id>
    <content type="html">&lt;p&gt;Exponential functions are an important class of mathematical functions. Generally they are defined as the solutions of the following differential equation:&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{df(t)}{dt} = C f(t)&lt;/script&gt;,&lt;/p&gt;
