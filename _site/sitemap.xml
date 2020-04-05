@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/https://www.apjd.de/books</loc>
-<lastmod>2020-04-05T02:02:09+02:00</lastmod>
+<loc>/books</loc>
+<lastmod>2020-04-05T02:09:21+02:00</lastmod>
 </url>
 <url>
-<loc>/https://www.apjd.de/about</loc>
-<lastmod>2020-04-05T02:02:09+02:00</lastmod>
+<loc>/about</loc>
+<lastmod>2020-04-05T02:09:21+02:00</lastmod>
 </url>
 <url>
-<loc>/https://www.apjd.de/search</loc>
-<lastmod>2020-04-05T02:02:09+02:00</lastmod>
+<loc>/search</loc>
+<lastmod>2020-04-05T02:09:21+02:00</lastmod>
 </url>
 <url>
-<loc>/https://www.apjd.de/2020/04/04/testing-latex</loc>
+<loc>/2020/04/04/testing-latex</loc>
 <lastmod>2020-04-04T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>/https://www.apjd.de/</loc>
+<loc>/</loc>
 </url>
 </urlset>

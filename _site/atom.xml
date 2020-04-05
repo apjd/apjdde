@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Thoughts</title>
- <link href="https://www.apjd.de/atom.xml" rel="self"/>
- <link href="https://www.apjd.de/"/>
- <updated>2020-04-05T02:02:09+02:00</updated>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2020-04-05T02:09:21+02:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>Introduction to LaTeX</title>
-   <link href="https://www.apjd.de/2020/04/04/testing-latex"/>
+   <link href="/2020/04/04/testing-latex"/>
    <updated>2020-04-04T00:00:00+02:00</updated>
    <id>/2020/04/04/Testing-Latex</id>
    <content type="html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
