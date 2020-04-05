@@ -8,13 +8,13 @@ twitter:
   creator: #yourusername
 author:
   twitter: #yourusername
-  name: #yourusername
+  name: apjd
   avatar:
   email: #youremail
   url: #yoururl
 permalink: pretty
 
-baseurl: 
+baseurl:
 
 highlighter: rouge
 

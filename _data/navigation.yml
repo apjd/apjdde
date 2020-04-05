@@ -6,6 +6,10 @@ links:
   url: /about
 - title: Books
   url: /books
+- title: Projects
+  url: /projects
+- title: Why
+  url: /why
 - title: Search
   url: /search
 - title: Rss

@@ -2,37 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Thoughts</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2020-04-05T02:11:04+02:00</updated>
- <id></id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-04-05T15:20:56+02:00</updated>
+ <id>http://localhost:4000</id>
  <author>
-   <name></name>
+   <name>apjd</name>
    <email></email>
  </author>
 
  
  <entry>
-   <title>Introduction to LaTeX</title>
-   <link href="/2020/04/04/testing-latex"/>
-   <updated>2020-04-04T00:00:00+02:00</updated>
-   <id>/2020/04/04/Testing-Latex</id>
-   <content type="html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+   <title>Meaning of the Electric Displacement</title>
+   <link href="http://localhost:4000/2020/04/05/meaning-electric-displacement"/>
+   <updated>2020-04-05T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/04/05/meaning-electric-displacement</id>
+   <content type="html">&lt;p&gt;Consider the simplest capacitor as shown in the figure. Between the two plates a dielectric material (non-conductor) is placed. As the electric field of the capacitor passes through the material, it induces electric dipole moments. The sum of the induced dipole moments per volume is called &lt;em&gt;Polarization&lt;/em&gt;:&lt;/p&gt;
 
-&lt;p&gt;Here is the text of your introduction.&lt;/p&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P = \frac{\sum{ex(t)}}{V}&lt;/script&gt;,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\label{simple_equation}
-    \alpha = \sqrt{ \beta }&lt;/script&gt;
+&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;x(t)&lt;/script&gt; being the distance between the positive core of the atom and the electron with charge &lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt; and volume &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;subsection-heading-here&quot;&gt;Subsection Heading Here&lt;/h2&gt;
+&lt;p&gt;Now these small dipole moments are microscopic capacitors by themselves and induce an electrical field that has the opposite direction compared to the external electric field. This leads to a decreased electric field inside of the material.&lt;/p&gt;
 
-&lt;p&gt;Write your subsection text here.&lt;/p&gt;
+&lt;p&gt;The strength of the field inside the material is described by the &lt;em&gt;electric Displacement&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;D&lt;/script&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;myfigure&quot; alt=&quot;Simulation Results&quot; /&gt;{#simulationfigure width=”3.0in”}&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D = \epsilon_0 E + P&lt;/script&gt;
 
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;D&lt;/script&gt; has the unit of charge per area.&lt;/p&gt;
 
-&lt;p&gt;Write your conclusion here.&lt;/p&gt;
+&lt;p&gt;Now the polasization by itself depends on the external field:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P = \epsilon_0 \chi E&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\chi&lt;/script&gt; is material-dependent and describes how “easily” can dipole moments be induced in the material. With this equation we get for the electric displacement:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D = E(\epsilon_0 + \epsilon_0 \chi)&lt;/script&gt;
+
+&lt;p&gt;We define the relative permeability as &lt;script type=&quot;math/tex&quot;&gt;\epsilon = 1 + \chi&lt;/script&gt; and finally get for the displacement field:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D = \epsilon_0 \epsilon E&lt;/script&gt;
+
+&lt;p&gt;This equation describes the strength of the electric field inside a material.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/capacitor.svg&quot; alt=&quot;capacitor&quot; height=&quot;50%&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The use of exponential functions in everyday life</title>
+   <link href="http://localhost:4000/2020/04/05/importance-of-exponential-functions"/>
+   <updated>2020-04-05T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/04/05/importance-of-exponential-functions</id>
+   <content type="html">&lt;p&gt;Exponential functions are an important class of mathematical functions. Generally they are defined as the solutions of the following differential equation:&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{df(t)}{dt} = C f(t)&lt;/script&gt;,&lt;/p&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;C&lt;/script&gt; is a constant and &lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt; is a variable, for example time. This means that exponential functions describe situations where the rate of change of something depends on how much of that something is currently available. The rate of change basically answers the question: How many new things do I get after a specific time?&lt;/p&gt;
+
+&lt;p&gt;An example is the spreading of a contagious disease. The number of people that get sick after a certain period of time, for example after one day, depends on how many people already have the disease.&lt;/p&gt;
+
+&lt;p&gt;Another example is the growth of money due to the interest rate. The amount of money that is added to my money after one year depends on how much money I already have in my bank account.&lt;/p&gt;
 </content>
  </entry>
  
