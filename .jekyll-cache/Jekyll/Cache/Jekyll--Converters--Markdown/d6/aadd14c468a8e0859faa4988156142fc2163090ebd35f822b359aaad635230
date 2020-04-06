@@ -1,0 +1,18 @@
+I"¡<p>Consider a simple quantum mechanical system consisting of two eigenstates <script type="math/tex">\ket{0}</script> and <script type="math/tex">\ket{1}</script>. A coupling between these two states means that there is a non-zero probability of a particle to go from one state to the other. Physically a coupling between two states is always achieved only by external influences. For example, light can couple different states in an atom. An electron can absorb a photon and go to a higher energy state, thus we can say these two states are coupled by the photon.</p>
+
+<p>Generally there are some physical quantity changes associated with such a transition. In simple terms: when a particle goes from one state to another state, something is changed. For example in case of photon absorption the energy of the electron will increase.</p>
+
+<p>How do we calculate such changes in physical quantities in quantum mechanics? Letâ€™s consider the energy.</p>
+
+<p>Generally the Hamiltonian can be written as:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+H_{fi} = \left< f \middle| \hat{H} \middle| i \right> %]]></script>
+
+<p>If <script type="math/tex">f \ne i</script>, <script type="math/tex">H_{fi}</script> is the energy difference between the final state <script type="math/tex">\ket{f}</script> and the initial state <script type="math/tex">\ket{i}</script>. The sign of <script type="math/tex">H_{fi}</script> determines the energy gain or loss.</p>
+
+<p><script type="math/tex">H_{fi}</script> can be calculated by an integral:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+H_{fi} = \left< f \middle| \hat{H} \middle| i \right> = \int{\psi_f^* \hat{H} \psi_i dx} %]]></script>
+:ET

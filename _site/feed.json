@@ -1,11 +1,11 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "Thoughts",
-    "home_page_url": "/",
-    "feed_url": "/feed.json",
+    "home_page_url": "http://localhost:4000/",
+    "feed_url": "http://localhost:4000/feed.json",
     "description": "Prinzipiells Denken.",
-    "icon": "/apple-touch-icon.png",
-    "favicon": "/favicon.ico",
+    "icon": "http://localhost:4000/apple-touch-icon.png",
+    "favicon": "http://localhost:4000/favicon.ico",
     "expired": false,
     
     "author":  {
@@ -17,12 +17,36 @@
 "items": [
     
         {
-            "id": "/2020/04/05/meaning-electric-displacement",
+            "id": "http://localhost:4000/2020/04/06/coupling-states-quantum-mechanics",
+            "title": "The coupling of states in quantum mechanics",
+            "summary": null,
+            "content_text": "Consider a simple quantum mechanical system consisting of two eigenstates  and . A coupling between these two states means that there is a non-zero probability of a particle to go from one state to the other. Physically a coupling between two states is always achieved only by external influences. For example, light can couple different states in an atom. An electron can absorb a photon and go to a higher energy state, thus we can say these two states are coupled by the photon.Generally there are some physical quantity changes associated with such a transition. In simple terms: when a particle goes from one state to another state, something is changed. For example in case of photon absorption the energy of the electron will increase.How do we calculate such changes in physical quantities in quantum mechanics? Let’s consider the energy.Generally the Hamiltonian can be written as:If ,  is the energy difference between the final state  and the initial state . The sign of  determines the energy gain or loss. can be calculated by an integral:",
+            "content_html": "<p>Consider a simple quantum mechanical system consisting of two eigenstates <script type=\"math/tex\">\\ket{0}</script> and <script type=\"math/tex\">\\ket{1}</script>. A coupling between these two states means that there is a non-zero probability of a particle to go from one state to the other. Physically a coupling between two states is always achieved only by external influences. For example, light can couple different states in an atom. An electron can absorb a photon and go to a higher energy state, thus we can say these two states are coupled by the photon.</p><p>Generally there are some physical quantity changes associated with such a transition. In simple terms: when a particle goes from one state to another state, something is changed. For example in case of photon absorption the energy of the electron will increase.</p><p>How do we calculate such changes in physical quantities in quantum mechanics? Let’s consider the energy.</p><p>Generally the Hamiltonian can be written as:</p><script type=\"math/tex; mode=display\">% <![CDATA[H_{fi} = \\left< f \\middle| \\hat{H} \\middle| i \\right> %]]></script><p>If <script type=\"math/tex\">f \\ne i</script>, <script type=\"math/tex\">H_{fi}</script> is the energy difference between the final state <script type=\"math/tex\">\\ket{f}</script> and the initial state <script type=\"math/tex\">\\ket{i}</script>. The sign of <script type=\"math/tex\">H_{fi}</script> determines the energy gain or loss.</p><p><script type=\"math/tex\">H_{fi}</script> can be calculated by an integral:</p><script type=\"math/tex; mode=display\">% <![CDATA[H_{fi} = \\left< f \\middle| \\hat{H} \\middle| i \\right> = \\int{\\psi_f^* \\hat{H} \\psi_i dx} %]]></script>",
+            "url": "http://localhost:4000/2020/04/06/coupling-states-quantum-mechanics",
+            
+            
+            
+            
+            
+            "date_published": "2020-04-06T00:00:00+02:00",
+            "date_modified": "2020-04-06T00:00:00+02:00",
+            
+                "author":  {
+                "name": "apjd",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "http://localhost:4000/2020/04/05/meaning-electric-displacement",
             "title": "The meaning of the Electric Displacement",
             "summary": null,
             "content_text": "Consider the simplest capacitor as shown in the figure. Between the two plates a dielectric material (non-conductor) is placed. As the electric field of the capacitor passes through the material, it induces electric dipole moments. The sum of the induced dipole moments per volume is called Polarization:,with  being the distance between the positive core of the atom and the electron with charge  and volume .Now these small dipole moments are microscopic capacitors by themselves and induce an electrical field that has the opposite direction compared to the external electric field. This leads to a decreased electric field inside of the material.The strength of the field inside the material is described by the electric Displacement : has the unit of charge per area.Now the polasization by itself depends on the external field: is material-dependent and describes how “easily” can dipole moments be induced in the material. With this equation we get for the electric displacement:We define the relative permeability as  and finally get for the displacement field:This equation describes the strength of the electric field inside a material.",
             "content_html": "<p>Consider the simplest capacitor as shown in the figure. Between the two plates a dielectric material (non-conductor) is placed. As the electric field of the capacitor passes through the material, it induces electric dipole moments. The sum of the induced dipole moments per volume is called <em>Polarization</em>:</p><p><script type=\"math/tex\">P = \\frac{\\sum{ex(t)}}{V}</script>,</p><p>with <script type=\"math/tex\">x(t)</script> being the distance between the positive core of the atom and the electron with charge <script type=\"math/tex\">e</script> and volume <script type=\"math/tex\">V</script>.</p><p>Now these small dipole moments are microscopic capacitors by themselves and induce an electrical field that has the opposite direction compared to the external electric field. This leads to a decreased electric field inside of the material.</p><p>The strength of the field inside the material is described by the <em>electric Displacement</em> <script type=\"math/tex\">D</script>:</p><script type=\"math/tex; mode=display\">D = \\epsilon_0 E + P</script><p><script type=\"math/tex\">D</script> has the unit of charge per area.</p><p>Now the polasization by itself depends on the external field:</p><script type=\"math/tex; mode=display\">P = \\epsilon_0 \\chi E</script><p><script type=\"math/tex\">\\chi</script> is material-dependent and describes how “easily” can dipole moments be induced in the material. With this equation we get for the electric displacement:</p><script type=\"math/tex; mode=display\">D = E(\\epsilon_0 + \\epsilon_0 \\chi)</script><p>We define the relative permeability as <script type=\"math/tex\">\\epsilon = 1 + \\chi</script> and finally get for the displacement field:</p><script type=\"math/tex; mode=display\">D = \\epsilon_0 \\epsilon E</script><p>This equation describes the strength of the electric field inside a material.</p><p><img src=\"/assets/images/capacitor.svg\" alt=\"capacitor\" height=\"50%\" width=\"50%\" /></p>",
-            "url": "/2020/04/05/meaning-electric-displacement",
+            "url": "http://localhost:4000/2020/04/05/meaning-electric-displacement",
             
             
             
@@ -41,12 +65,12 @@
         },
     
         {
-            "id": "/2020/04/05/importance-of-exponential-functions",
+            "id": "http://localhost:4000/2020/04/05/importance-of-exponential-functions",
             "title": "The use of exponential functions in everyday life",
             "summary": null,
             "content_text": "Exponential functions are an important class of mathematical functions. Generally they are defined as the solutions of the following differential equation:,where  is a constant and  is a variable, for example time. This means that exponential functions describe situations where the rate of change of something depends on how much of that something is currently available. The rate of change basically answers the question: How many new things do I get after a specific time?An example is the spreading of a contagious disease. The number of people that get sick after a certain period of time, for example after one day, depends on how many people already have the disease.Another example is the growth of money due to the interest rate. The amount of money that is added to my money after one year depends on how much money I already have in my bank account.",
             "content_html": "<p>Exponential functions are an important class of mathematical functions. Generally they are defined as the solutions of the following differential equation:</p><p><script type=\"math/tex\">\\frac{df(t)}{dt} = C f(t)</script>,</p><p>where <script type=\"math/tex\">C</script> is a constant and <script type=\"math/tex\">t</script> is a variable, for example time. This means that exponential functions describe situations where the rate of change of something depends on how much of that something is currently available. The rate of change basically answers the question: How many new things do I get after a specific time?</p><p>An example is the spreading of a contagious disease. The number of people that get sick after a certain period of time, for example after one day, depends on how many people already have the disease.</p><p>Another example is the growth of money due to the interest rate. The amount of money that is added to my money after one year depends on how much money I already have in my bank account.</p>",
-            "url": "/2020/04/05/importance-of-exponential-functions",
+            "url": "http://localhost:4000/2020/04/05/importance-of-exponential-functions",
             
             
             
