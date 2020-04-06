@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Thoughts</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2020-04-06T23:15:55+02:00</updated>
- <id></id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-04-06T23:26:57+02:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>apjd</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Light and matter - A description based on a quantum mechanical two-level system and a classical electric field</title>
-   <link href="/2020/04/06/light-matter-two-level-system"/>
+   <link href="http://localhost:4000/2020/04/06/light-matter-two-level-system"/>
    <updated>2020-04-06T00:00:00+02:00</updated>
-   <id>/2020/04/06/light-matter-two-level-system</id>
+   <id>http://localhost:4000/2020/04/06/light-matter-two-level-system</id>
    <content type="html">&lt;p&gt;In the following we will describe the effect of light on matter based on a very simple two-level quantum mechanical system. In another post I will describe light classically.&lt;/p&gt;
 
 &lt;p&gt;Suppose we have a simple two-level quantum mechanical system with energies &lt;script type=&quot;math/tex&quot;&gt;E_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;E_2&lt;/script&gt; and the states &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt;. Without any external influence, these two states are completely  uncoupled as there is no reason for a particle to jump from one state to the other (we assume the ground state as the initial state). This means that &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt; are time-independent and are solutions to the time-independent Schrödinger equation:&lt;/p&gt;
@@ -100,18 +100,18 @@
  
  <entry>
    <title>Light and matter - A classical description</title>
-   <link href="/2020/04/06/light-matter-classical-description"/>
+   <link href="http://localhost:4000/2020/04/06/light-matter-classical-description"/>
    <updated>2020-04-06T00:00:00+02:00</updated>
-   <id>/2020/04/06/light-matter-classical-description</id>
+   <id>http://localhost:4000/2020/04/06/light-matter-classical-description</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>The coupling of states in quantum mechanics</title>
-   <link href="/2020/04/06/coupling-states-quantum-mechanics"/>
+   <link href="http://localhost:4000/2020/04/06/coupling-states-quantum-mechanics"/>
    <updated>2020-04-06T00:00:00+02:00</updated>
-   <id>/2020/04/06/coupling-states-quantum-mechanics</id>
+   <id>http://localhost:4000/2020/04/06/coupling-states-quantum-mechanics</id>
    <content type="html">&lt;p&gt;Consider a simple quantum mechanical system consisting of two eigenstates &lt;script type=&quot;math/tex&quot;&gt;\ket{0}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\ket{1}&lt;/script&gt;. A coupling between these two states means that there is a non-zero probability of a particle to go from one state to the other. Physically a coupling between two states is always achieved only by external influences. For example, light can couple different states in an atom. An electron can absorb a photon and go to a higher energy state, thus we can say these two states are coupled by the photon.&lt;/p&gt;
 
 &lt;p&gt;Generally there are some physical quantity changes associated with such a transition. In simple terms: when a particle goes from one state to another state, something is changed. For example in case of photon absorption the energy of the electron will increase.&lt;/p&gt;
@@ -134,9 +134,9 @@ H_{fi} = \left&lt; f \middle| \hat{H} \middle| i \right&gt; = \int{\psi_f^* \hat
  
  <entry>
    <title>The meaning of the Electric Displacement</title>
-   <link href="/2020/04/05/meaning-electric-displacement"/>
+   <link href="http://localhost:4000/2020/04/05/meaning-electric-displacement"/>
    <updated>2020-04-05T00:00:00+02:00</updated>
-   <id>/2020/04/05/meaning-electric-displacement</id>
+   <id>http://localhost:4000/2020/04/05/meaning-electric-displacement</id>
    <content type="html">&lt;p&gt;Consider the simplest capacitor as shown in the figure. Between the two plates a dielectric material (non-conductor) is placed. As the electric field of the capacitor passes through the material, it induces electric dipole moments. The sum of the induced dipole moments per volume is called &lt;em&gt;Polarization&lt;/em&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P = \frac{\sum{ex(t)}}{V}&lt;/script&gt;,&lt;/p&gt;
@@ -171,9 +171,9 @@ H_{fi} = \left&lt; f \middle| \hat{H} \middle| i \right&gt; = \int{\psi_f^* \hat
  
  <entry>
    <title>The use of exponential functions in everyday life</title>
-   <link href="/2020/04/05/importance-of-exponential-functions"/>
+   <link href="http://localhost:4000/2020/04/05/importance-of-exponential-functions"/>
    <updated>2020-04-05T00:00:00+02:00</updated>
-   <id>/2020/04/05/importance-of-exponential-functions</id>
+   <id>http://localhost:4000/2020/04/05/importance-of-exponential-functions</id>
    <content type="html">&lt;p&gt;Exponential functions are an important class of mathematical functions. Generally they are defined as the solutions of the following differential equation:&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{df(t)}{dt} = C f(t)&lt;/script&gt;,&lt;/p&gt;

@@ -12,5 +12,5 @@ links:
   url: /why
 - title: Search
   url: /search
-- title: Rss
+- title: RSS
   url: /atom.xml
