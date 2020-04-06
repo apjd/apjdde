@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Thoughts</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2020-04-06T02:30:34+02:00</updated>
- <id>http://localhost:4000</id>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2020-04-06T22:56:24+02:00</updated>
+ <id></id>
  <author>
    <name>apjd</name>
    <email></email>
@@ -13,10 +13,105 @@
 
  
  <entry>
-   <title>The coupling of states in quantum mechanics</title>
-   <link href="http://localhost:4000/2020/04/06/coupling-states-quantum-mechanics"/>
+   <title>Light and matter - A description based on a quantum mechanical two-level system and a classical electric field</title>
+   <link href="/2020/04/06/light-matter-two-level-system"/>
    <updated>2020-04-06T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/04/06/coupling-states-quantum-mechanics</id>
+   <id>/2020/04/06/light-matter-two-level-system</id>
+   <content type="html">&lt;p&gt;In the following we will describe the effect of light on matter based on a very simple two-level quantum mechanical system. In another post I will describe light classically.&lt;/p&gt;
+
+&lt;p&gt;Suppose we have a simple two-level quantum mechanical system with energies &lt;script type=&quot;math/tex&quot;&gt;E_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;E_2&lt;/script&gt; and the states &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt;. Without any external influence, these two states are completely  uncoupled as there is no reason for a particle to jump from one state to the other (we assume the ground state as the initial state). This means that &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt; are time-independent and are solutions to the time-independent Schrödinger equation:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \hat{H_0} \psi_j = E_j \psi_j
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;Now what happens when light hits matter? The two states are now coupled! Why? Because now an electron in the ground state &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; can absorb energy from light (a photon) and jump to the higher energy state &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt;!&lt;/p&gt;
+
+&lt;p&gt;To make the calculations a bit simpler, we want to treat light classically. In classical electrodynamics, light is basically an alternating electric field &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\vec{B}&lt;/script&gt; field. For now we ignore the magnetic field &lt;script type=&quot;math/tex&quot;&gt;\vec{B}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The question of the interaction of light and matter becomes: How does an alternating external electric field &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; does change our two-level quantum mechanical system?&lt;/p&gt;
+
+&lt;p&gt;First, the external electric field &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; leads to a coupled two-level system because now a transition between the two states is possible. There is a general Ansatz for coupled quantum mechanical system: Describe the overall system as a linear combination of the uncoupled states.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \psi = c_1 \psi_0 + c_2 \psi_1
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;As we are dealing with an alternating electric field &lt;script type=&quot;math/tex&quot;&gt;\vec{E}(t)&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;c_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;c_2&lt;/script&gt; must be time-independent. Because it can be that at a time the state &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; is more “favourable” and at another time the state &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;An external electric field &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; can also lead to an induced dipole moment. Without the external field normally the dipole moment vanishes in time average because of the symmetry (imagine the probability cloud for the position of an electron around the core in &lt;script type=&quot;math/tex&quot;&gt;1s&lt;/script&gt; state in the hydrogen atom). This means that the overall energy of the system is now the sum of the energy of the unperturbed system and the dipole moment:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \hat{H} = \hat{H_0} + \hat{H}_{dipole} = \hat{H_0} - e\hat{\vec{E}} \hat{x}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;Now has does the overall Schrödinger equation looks like? &lt;script type=&quot;math/tex&quot;&gt;\psi&lt;/script&gt; must now be time-dependent, as the field changes the position probability clouds of the electron from time to time. So we need to solve the time-dependent Schrödinger equation:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  i\hbar \frac{\partial \psi}{\partial t} = (\hat{H_0} + \hat{H}_{dipole}) \psi
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;Now what do we get for &lt;script type=&quot;math/tex&quot;&gt;\psi&lt;/script&gt; after solving the Schrödinger equation? &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt; are assumed to be known (solutions of the hydrogen atom). For &lt;script type=&quot;math/tex&quot;&gt;c_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;c_2&lt;/script&gt; we get:&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\begin{equation}
+  c_1 = \exp{\frac{-iE_1t}{\hbar}} \cos{\omega_{rabi} t}
+\end{equation}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\begin{equation}
+  c_2 = \exp{\frac{-iE_2t}{\hbar}} \sin{\omega_{rabi} t}
+\end{equation}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\begin{equation}
+  |c_1|^2 = \cos^2{(\omega_{rabi} t)}
+\end{equation}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\begin{equation}
+  |c_2|^2 = \sin^2{(\omega_{rabi} t)}^2
+\end{equation}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;What does this means? As &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt; are time-independent, the time-dependence of the overall wave function &lt;script type=&quot;math/tex&quot;&gt;\psi&lt;/script&gt; is determined by &lt;script type=&quot;math/tex&quot;&gt;c_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;c_2&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;What this means it that the electron jumps between &lt;script type=&quot;math/tex&quot;&gt;\psi_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\psi_1&lt;/script&gt; with a frequency of &lt;script type=&quot;math/tex&quot;&gt;2\omega_{rabi}&lt;/script&gt; (&lt;script type=&quot;math/tex&quot;&gt;1\omega_{rabi}&lt;/script&gt; is the frequency to see the electron in the same state again). This jumping back and forth of the electron is called the &lt;em&gt;Rabi oscillation&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The the value of &lt;script type=&quot;math/tex&quot;&gt;\omega_{Rabi}&lt;/script&gt; is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \omega_{Rabi} = \frac{\vec{E}_0 \cdot \vec{\mu}_{01}}{\hbar}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec{E}_0 \cdot \vec{\mu}_{01}&lt;/script&gt; is the energy gain that we get when the external electric field induces a dipole moment (please note that &lt;script type=&quot;math/tex&quot;&gt;\omega_{Rabi}&lt;/script&gt; depends on the time-independent &lt;script type=&quot;math/tex&quot;&gt;\vec{E}_0&lt;/script&gt;, so &lt;script type=&quot;math/tex&quot;&gt;\omega_{Rabi}&lt;/script&gt; is constant and only depends on the magnitude and direction of the external electric field and not its frequency. This makes &lt;script type=&quot;math/tex&quot;&gt;\omega_{Rabi}&lt;/script&gt; somehow characteristic to the material).&lt;/p&gt;
+
+&lt;h2 id=&quot;rabi-oscillation&quot;&gt;Rabi oscillation&lt;/h2&gt;
+
+&lt;p&gt;What happens when an electron jumps back and forth between two states? When it jumps to a higher energy state it absorbs energy (a photon). When is jumps back to the lower energy state it gives back the energy, it emits a photon. How many photons are emitted after the time &lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;? Because the electron is in the ground state with a freqeuncy of &lt;script type=&quot;math/tex&quot;&gt;\omega_{rabi}&lt;/script&gt;, it emits &lt;script type=&quot;math/tex&quot;&gt;\omega_{rabi} \times 2\pi \times t&lt;/script&gt; photons. What energy do the photons have?&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hbar \omega_{photon} = E_2 - E_1&lt;/script&gt;
+
+&lt;p&gt;Physicists have a name for the phenomenon that an electron emits a photon after being excited to a higher state: &lt;em&gt;stimulated emission&lt;/em&gt; as it does not occur by itself and is induced by an external force.&lt;/p&gt;
+
+&lt;h2 id=&quot;damping&quot;&gt;Damping&lt;/h2&gt;
+
+&lt;p&gt;In real world we often cannot observe full Rabi oscillation, meaning we don’t see emission of the photons by &lt;script type=&quot;math/tex&quot;&gt;\omega_{rabi}&lt;/script&gt;. This is because electrons often lose their energy as heat before reaching a higher state. The probability of finding an electron in a higher states is given by:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  |c_2|^2 \approx (\frac{\omega_{Rabi}}{2\gamma})^2
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt; is the damping constant. This means that if we want to have more electrons in higher states, we need higher &lt;script type=&quot;math/tex&quot;&gt;\omega_{Rabi}&lt;/script&gt;. This can be achieved by stronger external fields.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Light and matter - A classical description</title>
+   <link href="/2020/04/06/light-matter-classical-description"/>
+   <updated>2020-04-06T00:00:00+02:00</updated>
+   <id>/2020/04/06/light-matter-classical-description</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The coupling of states in quantum mechanics</title>
+   <link href="/2020/04/06/coupling-states-quantum-mechanics"/>
+   <updated>2020-04-06T00:00:00+02:00</updated>
+   <id>/2020/04/06/coupling-states-quantum-mechanics</id>
    <content type="html">&lt;p&gt;Consider a simple quantum mechanical system consisting of two eigenstates &lt;script type=&quot;math/tex&quot;&gt;\ket{0}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\ket{1}&lt;/script&gt;. A coupling between these two states means that there is a non-zero probability of a particle to go from one state to the other. Physically a coupling between two states is always achieved only by external influences. For example, light can couple different states in an atom. An electron can absorb a photon and go to a higher energy state, thus we can say these two states are coupled by the photon.&lt;/p&gt;
 
 &lt;p&gt;Generally there are some physical quantity changes associated with such a transition. In simple terms: when a particle goes from one state to another state, something is changed. For example in case of photon absorption the energy of the electron will increase.&lt;/p&gt;
@@ -39,9 +134,9 @@ H_{fi} = \left&lt; f \middle| \hat{H} \middle| i \right&gt; = \int{\psi_f^* \hat
  
  <entry>
    <title>The meaning of the Electric Displacement</title>
-   <link href="http://localhost:4000/2020/04/05/meaning-electric-displacement"/>
+   <link href="/2020/04/05/meaning-electric-displacement"/>
    <updated>2020-04-05T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/04/05/meaning-electric-displacement</id>
+   <id>/2020/04/05/meaning-electric-displacement</id>
    <content type="html">&lt;p&gt;Consider the simplest capacitor as shown in the figure. Between the two plates a dielectric material (non-conductor) is placed. As the electric field of the capacitor passes through the material, it induces electric dipole moments. The sum of the induced dipole moments per volume is called &lt;em&gt;Polarization&lt;/em&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P = \frac{\sum{ex(t)}}{V}&lt;/script&gt;,&lt;/p&gt;
@@ -76,9 +171,9 @@ H_{fi} = \left&lt; f \middle| \hat{H} \middle| i \right&gt; = \int{\psi_f^* \hat
  
  <entry>
    <title>The use of exponential functions in everyday life</title>
-   <link href="http://localhost:4000/2020/04/05/importance-of-exponential-functions"/>
+   <link href="/2020/04/05/importance-of-exponential-functions"/>
    <updated>2020-04-05T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/04/05/importance-of-exponential-functions</id>
+   <id>/2020/04/05/importance-of-exponential-functions</id>
    <content type="html">&lt;p&gt;Exponential functions are an important class of mathematical functions. Generally they are defined as the solutions of the following differential equation:&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{df(t)}{dt} = C f(t)&lt;/script&gt;,&lt;/p&gt;

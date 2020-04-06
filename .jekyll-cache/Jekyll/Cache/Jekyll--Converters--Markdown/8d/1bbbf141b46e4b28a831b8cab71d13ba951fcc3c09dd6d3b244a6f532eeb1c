@@ -1,0 +1,79 @@
+I"�<p>In the following we will describe the effect of light on matter based on a very simple two-level quantum mechanical system. In another post I will describe light classically.</p>
+
+<p>Suppose we have a simple two-level quantum mechanical system with energies <script type="math/tex">E_1</script> and <script type="math/tex">E_2</script> and the states <script type="math/tex">\psi_0</script> and <script type="math/tex">\psi_1</script>. Without any external influence, these two states are completely  uncoupled as there is no reason for a particle to jump from one state to the other (we assume the ground state as the initial state). This means that <script type="math/tex">\psi_0</script> and <script type="math/tex">\psi_1</script> are time-independent and are solutions to the time-independent Schrödinger equation:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \hat{H_0} \psi_j = E_j \psi_j
+\end{equation}</script>
+
+<p>Now what happens when light hits matter? The two states are now coupled! Why? Because now an electron in the ground state <script type="math/tex">\psi_0</script> can absorb energy from light (a photon) and jump to the higher energy state <script type="math/tex">\psi_1</script>!</p>
+
+<p>To make the calculations a bit simpler, we want to treat light classically. In classical electrodynamics, light is basically an alternating electric field <script type="math/tex">\vec{E}</script> and <script type="math/tex">\vec{B}</script> field. For now we ignore the magnetic field <script type="math/tex">\vec{B}</script>.</p>
+
+<p>The question of the interaction of light and matter becomes: How does an alternating external electric field <script type="math/tex">\vec{E}</script> does change our two-level quantum mechanical system?</p>
+
+<p>First, the external electric field <script type="math/tex">\vec{E}</script> leads to a coupled two-level system because now a transition between the two states is possible. There is a general Ansatz for coupled quantum mechanical system: Describe the overall system as a linear combination of the uncoupled states.</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \psi = c_1 \psi_0 + c_2 \psi_1
+\end{equation}</script>
+
+<p>As we are dealing with an alternating electric field <script type="math/tex">\vec{E}(t)</script>, <script type="math/tex">c_1</script> and <script type="math/tex">c_2</script> must be time-independent. Because it can be that at a time the state <script type="math/tex">\psi_0</script> is more “favourable” and at another time the state <script type="math/tex">\psi_1</script>.</p>
+
+<p>An external electric field <script type="math/tex">\vec{E}</script> can also lead to an induced dipole moment. Without the external field normally the dipole moment vanishes in time average because of the symmetry (imagine the probability cloud for the position of an electron around the core in <script type="math/tex">1s</script> state in the hydrogen atom). This means that the overall energy of the system is now the sum of the energy of the unperturbed system and the dipole moment:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \hat{H} = \hat{H_0} + \hat{H}_{dipole} = \hat{H_0} - e\hat{\vec{E}} \hat{x}
+\end{equation}</script>
+
+<p>Now has does the overall Schrödinger equation looks like? <script type="math/tex">\psi</script> must now be time-dependent, as the field changes the position probability clouds of the electron from time to time. So we need to solve the time-dependent Schrödinger equation:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  i\hbar \frac{\partial \psi}{\partial t} = (\hat{H_0} + \hat{H}_{dipole}) \psi
+\end{equation}</script>
+
+<p>Now what do we get for <script type="math/tex">\psi</script> after solving the Schrödinger equation? <script type="math/tex">\psi_0</script> and <script type="math/tex">\psi_1</script> are assumed to be known (solutions of the hydrogen atom). For <script type="math/tex">c_1</script> and <script type="math/tex">c_2</script> we get:</p>
+
+<p><script type="math/tex">\begin{equation}
+  c_1 = \exp{\frac{-iE_1t}{\hbar}} \cos{\omega_{rabi} t}
+\end{equation}</script>
+<script type="math/tex">\begin{equation}
+  c_2 = \exp{\frac{-iE_2t}{\hbar}} \sin{\omega_{rabi} t}
+\end{equation}</script>
+<script type="math/tex">\begin{equation}
+  |c_1|^2 = \cos^2{(\omega_{rabi} t)}
+\end{equation}</script>
+<script type="math/tex">\begin{equation}
+  |c_2|^2 = \sin^2{(\omega_{rabi} t)}^2
+\end{equation}</script></p>
+
+<p>What does this means? As <script type="math/tex">\psi_0</script> and <script type="math/tex">\psi_1</script> are time-independent, the time-dependence of the overall wave function <script type="math/tex">\psi</script> is determined by <script type="math/tex">c_1</script> and <script type="math/tex">c_2</script>.</p>
+
+<p>What this means it that the electron jumps between <script type="math/tex">\psi_0</script> and <script type="math/tex">\psi_1</script> with a frequency of <script type="math/tex">2\omega_{rabi}</script> (<script type="math/tex">1\omega_{rabi}</script> is the frequency to see the electron in the same state again). This jumping back and forth of the electron is called the <em>Rabi oscillation</em>.</p>
+
+<p>The the value of <script type="math/tex">\omega_{Rabi}</script> is:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \omega_{Rabi} = \frac{\vec{E}_0 \cdot \vec{\mu}_{01}}{\hbar}
+\end{equation}</script>
+
+<p><script type="math/tex">\vec{E}_0 \cdot \vec{\mu}_{01}</script> is the energy gain that we get when the external electric field induces a dipole moment (please note that <script type="math/tex">\omega_{Rabi}</script> depends on the time-independent <script type="math/tex">\vec{E}_0</script>, so <script type="math/tex">\omega_{Rabi}</script> is constant and only depends on the magnitude and direction of the external electric field and not its frequency. This makes <script type="math/tex">\omega_{Rabi}</script> somehow characteristic to the material).</p>
+
+<h2 id="rabi-oscillation">Rabi oscillation</h2>
+
+<p>What happens when an electron jumps back and forth between two states? When it jumps to a higher energy state it absorbs energy (a photon). When is jumps back to the lower energy state it gives back the energy, it emits a photon. How many photons are emitted after the time <script type="math/tex">t</script>? Because the electron is in the ground state with a freqeuncy of <script type="math/tex">\omega_{rabi}</script>, it emits <script type="math/tex">\omega_{rabi} \times 2\pi \times t</script> photons. What energy do the photons have?</p>
+
+<script type="math/tex; mode=display">\hbar \omega_{photon} = E_2 - E_1</script>
+
+<p>Physicists have a name for the phenomenon that an electron emits a photon after being excited to a higher state: <em>stimulated emission</em> as it does not occur by itself and is induced by an external force.</p>
+
+<h2 id="damping">Damping</h2>
+
+<p>In real world we often cannot observe full Rabi oscillation, meaning we don’t see emission of the photons by <script type="math/tex">\omega_{rabi}</script>. This is because electrons often lose their energy as heat before reaching a higher state. The probability of finding an electron in a higher states is given by:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  |c_2|^2 \approx (\frac{\omega_{Rabi}}{2\gamma})^2
+\end{equation}</script>
+
+<p><script type="math/tex">\gamma</script> is the damping constant. This means that if we want to have more electrons in higher states, we need higher <script type="math/tex">\omega_{Rabi}</script>. This can be achieved by stronger external fields.</p>
+:ET
