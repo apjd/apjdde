@@ -4,7 +4,7 @@
  <title>Thoughts</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2020-04-07T12:54:26+02:00</updated>
+ <updated>2020-04-07T15:45:46+02:00</updated>
  <id></id>
  <author>
    <name>apjd</name>
@@ -155,18 +155,15 @@ m_{e}\dfrac {\partial ^{2}}{\partial t^{2}}x \left( t\right) +m_{e  } \gamma \df
   x \left( t\right) =\overrightarrow {x}_{0}\left( t\right) e^{i( \overrightarrow {k}\overrightarrow {r}-\omega t + \phi)}
 \end{equation}&lt;/script&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\begin{equation}
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
 {\vec{x}}_0 = \frac{-e\vec{E}_0}{m_e}\frac{1}{\sqrt{(\omega^2 - \omega_0^2)^2+ (\gamma \omega^2)}}
 \end{equation}&lt;/script&gt;
-$$
-\begin{equation}&lt;/p&gt;
 
-&lt;p&gt;\end{equation}
-&lt;script type=&quot;math/tex&quot;&gt;&lt;/script&gt;
-\begin{equation}&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \tan{\phi} = \frac{\gamma \omega}{\omega_0^2 - \omega^2}
+\end{equation}&lt;/script&gt;
 
-&lt;p&gt;\end{equation}
-$$&lt;/p&gt;
+&lt;p&gt;What does this mean? When the frequency of the external electric field &lt;script type=&quot;math/tex&quot;&gt;\omega&lt;/script&gt; approaches the intrinsic frequency of the oscillator &lt;script type=&quot;math/tex&quot;&gt;\omega_0&lt;/script&gt; we get a higher and higher amplitude:  the distance between the electron and the core becomes larger and larger. Also we get a phase-shift between the external field and the oscillation of &lt;script type=&quot;math/tex&quot;&gt;\frac{\pi}{2}&lt;/script&gt; when &lt;script type=&quot;math/tex&quot;&gt;\omega&lt;/script&gt; approaches &lt;script type=&quot;math/tex&quot;&gt;\omega_0&lt;/script&gt; (look at these plots: amplitude against &lt;script type=&quot;math/tex&quot;&gt;\omega/\omega_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt; against &lt;script type=&quot;math/tex&quot;&gt;\omega/\omega_0&lt;/script&gt;).&lt;/p&gt;
 </content>
  </entry>
  

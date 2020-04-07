@@ -1,0 +1,62 @@
+I"�<p>How is the interaction of light and atoms described in classical physics? First we start defining light and matter in terms of classical physics.</p>
+
+<p>In classical electrodynamics, light is a wave. It is a wave of alternating electric and magnetic fields that are perpendicular to the direction of propagation and to each other. The electric and magnetic fields of light must be solutions to the electromagnetic wave equation:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \nabla^2 \vec{E} = \frac{1}{c^2} \frac{\partial^2 \vec{E}}{\partial t^2}
+\end{equation}</script>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \nabla^2 \vec{B} = \frac{1}{c^2} \frac{\partial^2 \vec{B}}{\partial t^2}
+\end{equation}</script>
+
+<p><script type="math/tex">c</script> is the propagation speed. Every solution to the wave equation can be thought as a linear combination of many simple sinus waves with the same propagation speed <script type="math/tex">c</script>. So the must simple description of light is a sinus magnetic and a sinus electric field, for example:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \vec{E}(\vec{r}, t) = \vec{E}_0 \cos{(\vec{k} \cdot \vec{r} - \omega t)}
+\end{equation}</script>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \vec{B}(\vec{r}, t) = \vec{B}_0 \cos{(\vec{k} \cdot \vec{r} - \omega t)}
+\end{equation}</script>
+
+<p><script type="math/tex">\vec{k}</script> is the wave vector. It points to the direction of propagation and <script type="math/tex">\\|\overrightarrow{k}\\| = \dfrac{2\pi }{\lambda }</script>. And there is actually a simple and nice relationship between the electric and magnetic field:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \overrightarrow {B}=\dfrac {1}{\omega}\left( \overrightarrow {k}\times \overrightarrow {E}\right)
+\end{equation}</script>
+
+<p>What is the relationship between <script type="math/tex">c</script>, <script type="math/tex">\vec{k}</script> and <script type="math/tex">\omega</script>? Imagine a point fixed to a wave. How fast does it move? We now that after the time period <script type="math/tex">T</script> it covers a distance of the wavelength <script type="math/tex">\lambda</script>, so its effective speed is:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  c=\dfrac {\lambda }{T}=\lambda \dfrac {1}{T}=\dfrac {2\pi }{\left| \overrightarrow {k}\right| }\dfrac {\omega }{2\pi }=\dfrac {\omega}{\left| \overrightarrow {k}\right| }
+\end{equation}</script>
+
+<p>(Here, if we imagine a point fixed to the wave, <script type="math/tex">c</script> is the <em>effective speed</em> of the point. This speed is called the <em>phase velocity</em>. As the point goes up and down, and not in straight line, its actual speed must be higher)</p>
+
+<p>Now, how can we describe an atom classically? Simple, as a positive and a negative charge connected by a spring!</p>
+
+<p>So classically, the interaction of light and matter becomes the interaction of a spring bounded dipole with an alternating electric field! The equation of motion of this system is simply that of the driven and damped harmonic oscillator, the Lorentz oscillator:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+m_{e}\dfrac {\partial ^{2}}{\partial t^{2}}x \left( t\right) +m_{e  } \gamma \dfrac {\partial}{\partial t}x \left( t\right) +m_{e}{\omega}^{2}_{0}x\left( t\right) =-e\overrightarrow {E}_{0}e^{i\left( \overrightarrow {k}\overrightarrow {x}-\omega t\right) }
+\end{equation}</script>
+
+<p><script type="math/tex">\gamma</script> is the damping constant. This considers possible energy losses in the atom. For the eigenfrequency <script type="math/tex">\omega_0</script> we have: <script type="math/tex">\omega_0 = \frac{\kappa}{m}</script> (<script type="math/tex">\kappa</script> is the sprint constant). This is the frequency of the oscillation of the simple harmonic oscillator: if we don’t have damping and external drive forces. So <script type="math/tex">\omega_0</script> is somehow “intrinsic” to the oscillator.</p>
+
+<p>The solution of the Lorentz oscillator for the distance between the electron the and core is given by:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  x \left( t\right) =\overrightarrow {x}_{0}\left( t\right) e^{i( \overrightarrow {k}\overrightarrow {r}-\omega t + \phi)}
+\end{equation}</script>
+
+<script type="math/tex; mode=display">\begin{equation}
+{\vec{x}}_0 = \frac{-e\vec{E}_0}{m_e}\frac{1}{\sqrt{(\omega^2 - \omega_0^2)^2+ (\gamma \omega^2)}}
+\end{equation}</script>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \tan{\phi} = \frac{\gamma \omega}{\omega_0^2 - \omega^2}
+\end{equation}</script>
+
+<p>What does this mean? When the frequency of the external electric field <script type="math/tex">\omega</script> approaches the intrinsic frequency of the oscillator <script type="math/tex">\omega_0</script> we get higher and higher amplitude:  the distance between the electron and the core becomes larger and larger. Also we get a phase-shift between the external field and the oscillation of <script type="math/tex">\frac{\pi}{2}</script> when <script type="math/tex">\omega</script> approaches <script type="math/tex">\omega_0</script>.</p>
+:ET

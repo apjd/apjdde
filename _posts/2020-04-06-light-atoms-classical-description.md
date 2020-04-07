@@ -80,13 +80,11 @@ $$
 {\vec{x}}_0 = \frac{-e\vec{E}_0}{m_e}\frac{1}{\sqrt{(\omega^2 - \omega_0^2)^2+ (\gamma \omega^2)}}
 \end{equation}
 $$
+
 $$
 \begin{equation}
-
+  \tan{\phi} = \frac{\gamma \omega}{\omega_0^2 - \omega^2}
 \end{equation}
 $$
-$$
-\begin{equation}
 
-\end{equation}
-$$
+What does this mean? When the frequency of the external electric field $$\omega$$ approaches the intrinsic frequency of the oscillator $$\omega_0$$ we get a higher and higher amplitude:  the distance between the electron and the core becomes larger and larger. Also we get a phase-shift between the external field and the oscillation of $$\frac{\pi}{2}$$ when $$\omega$$ approaches $$\omega_0$$ (look at these plots: amplitude against $$\omega/\omega_0$$ and $$\phi$$ against $$\omega/\omega_0$$).
