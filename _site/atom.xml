@@ -4,7 +4,7 @@
  <title>Thoughts</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-04-06T23:26:57+02:00</updated>
+ <updated>2020-04-07T12:33:17+02:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>apjd</name>
@@ -99,11 +99,74 @@
  </entry>
  
  <entry>
-   <title>Light and matter - A classical description</title>
-   <link href="http://localhost:4000/2020/04/06/light-matter-classical-description"/>
+   <title>Light and atoms - A classical description, Lorentz Oscillator</title>
+   <link href="http://localhost:4000/2020/04/06/light-atoms-classical-description"/>
    <updated>2020-04-06T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/04/06/light-matter-classical-description</id>
-   <content type="html">
+   <id>http://localhost:4000/2020/04/06/light-atoms-classical-description</id>
+   <content type="html">&lt;p&gt;How is the interaction of light and atoms described in classical physics? First we start defining light and matter in terms of classical physics.&lt;/p&gt;
+
+&lt;p&gt;In classical electrodynamics, light is a wave. It is a wave of alternating electric and magnetic fields that are perpendicular to the direction of propagation and to each other. The electric and magnetic fields of light must be solutions to the electromagnetic wave equation:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \nabla^2 \vec{E} = \frac{1}{c^2} \frac{\partial^2 \vec{E}}{\partial t^2}
+\end{equation}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \nabla^2 \vec{B} = \frac{1}{c^2} \frac{\partial^2 \vec{B}}{\partial t^2}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;c&lt;/script&gt; is the propagation speed. Every solution to the wave equation can be thought as a linear combination of many simple sinus waves with the same propagation speed &lt;script type=&quot;math/tex&quot;&gt;c&lt;/script&gt;. So the must simple description of light is a sinus magnetic and a sinus electric field, for example:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \vec{E}(\vec{r}, t) = \vec{E}_0 \cos{(\vec{k} \cdot \vec{r} - \omega t)}
+\end{equation}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \vec{B}(\vec{r}, t) = \vec{B}_0 \cos{(\vec{k} \cdot \vec{r} - \omega t)}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec{k}&lt;/script&gt; is the wave vector. It points to the direction of propagation and &lt;script type=&quot;math/tex&quot;&gt;\\|\overrightarrow{k}\\| = \dfrac{2\pi }{\lambda }&lt;/script&gt;. And there is actually a simple and nice relationship between the electric and magnetic field:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \overrightarrow {B}=\dfrac {1}{\omega}\left( \overrightarrow {k}\times \overrightarrow {E}\right)
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;What is the relationship between &lt;script type=&quot;math/tex&quot;&gt;c&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\vec{k}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\omega&lt;/script&gt;? Imagine a point fixed to a wave. How fast does it move? We now that after the time period &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; it covers a distance of the wavelength &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt;, so its effective speed is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  c=\dfrac {\lambda }{T}=\lambda \dfrac {1}{T}=\dfrac {2\pi }{\left| \overrightarrow {k}\right| }\dfrac {\omega }{2\pi }=\dfrac {\omega}{\left| \overrightarrow {k}\right| }
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;(Here, if we imagine a point fixed to the wave, &lt;script type=&quot;math/tex&quot;&gt;c&lt;/script&gt; is the &lt;em&gt;effective speed&lt;/em&gt; of the point. This speed is called the &lt;em&gt;phase velocity&lt;/em&gt;. As the point goes up and down, and not in straight line, its actual speed must be higher)&lt;/p&gt;
+
+&lt;p&gt;Now, how can we describe an atom classically? Simple, as a positive and a negative charge connected by a spring!&lt;/p&gt;
+
+&lt;p&gt;So classically, the interaction of light and matter becomes the interaction of a spring bounded dipole with an alternating electric field! The equation of motion of this system is simply that of the driven and damped harmonic oscillator, the Lorentz oscillator:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+m_{e}\dfrac {\partial ^{2}}{\partial t^{2}}x \left( t\right) +m_{e  } \gamma \dfrac {\partial}{\partial t}x \left( t\right) +m_{e}{\omega}^{2}_{0}x\left( t\right) =-e\overrightarrow {E}_{0}e^{i\left( \overrightarrow {k}\overrightarrow {x}-\omega t\right) }
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt; is the damping constant. This considers possible energy losses in the atom. For the eigenfrequency &lt;script type=&quot;math/tex&quot;&gt;\omega_0&lt;/script&gt; we have: &lt;script type=&quot;math/tex&quot;&gt;\omega_0 = \frac{\kappa}{m}&lt;/script&gt; (&lt;script type=&quot;math/tex&quot;&gt;\kappa&lt;/script&gt; is the sprint constant). This is the frequency of the oscillation of the simple harmonic oscillator: if we don’t have damping and external drive forces. So &lt;script type=&quot;math/tex&quot;&gt;\omega_0&lt;/script&gt; is somehow “intrinsic” to the oscillator.&lt;/p&gt;
+
+&lt;p&gt;The solution of the Lorentz oscillator for the distance between the electron the and core is given by:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  x \left( t\right) =\overrightarrow {x}_{0}\left( t\right) e^{i( \overrightarrow {k}\overrightarrow {r}-\omega t + \phi)}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\begin{equation}
+{\vec{x}}_0 = \frac{-e\vec{E}_0}{m_e}\frac{1}{\sqrt{(\omega^2 - \omega_0^2)^2+ (\gamma \omega^2)}}
+\end{equation}&lt;/script&gt;
+$$
+\begin{equation}&lt;/p&gt;
+
+&lt;p&gt;\end{equation}
+&lt;script type=&quot;math/tex&quot;&gt;&lt;/script&gt;
+\begin{equation}&lt;/p&gt;
+
+&lt;p&gt;\end{equation}
+$$&lt;/p&gt;
 </content>
  </entry>
  

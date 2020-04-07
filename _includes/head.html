@@ -45,16 +45,22 @@
     document.head.appendChild(script);
   }, false);
 
-  window.MathJax = {
-  loader: {load: ['[tex]/braket']},
-  tex: {packages: {'[+]': ['braket']}}
-};
 
-  window.MathJax = {
-    tex: {
-      tags: 'ams'
-    }
+  </script>
+  <script type="text/javascript">
+    window.MathJax = {
+    loader: {load: ['[tex]/braket']},
+    tex: {packages: {'[+]': ['braket']}}
   };
+
+    
+
+
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
   </script>
 
 
