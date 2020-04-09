@@ -4,13 +4,87 @@
  <title>Thoughts</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2020-04-08T01:36:30+02:00</updated>
+ <updated>2020-04-09T23:58:00+02:00</updated>
  <id></id>
  <author>
    <name>apjd</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>The electric flux density (displacement field)</title>
+   <link href="/2020/04/09/electric-displacement-field"/>
+   <updated>2020-04-09T00:00:00+02:00</updated>
+   <id>/2020/04/09/electric-displacement-field</id>
+   <content type="html">&lt;p&gt;There are some things that have caused a lot of confusion for me when I did electrodynamics, a lot of them spawn when matter comes into play. One of those things is the &lt;em&gt;electric displacement&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In electrodynamics, &lt;em&gt;electric field strength&lt;/em&gt;, &lt;em&gt;electric flux&lt;/em&gt;, &lt;em&gt;electric flux density&lt;/em&gt;, &lt;em&gt;magnetic field strength&lt;/em&gt;, &lt;em&gt;magnetic flux&lt;/em&gt;, and &lt;em&gt;magnetic flux density&lt;/em&gt; are different things.&lt;/p&gt;
+
+&lt;p&gt;Consider a &lt;strong&gt;fixed&lt;/strong&gt; positive charge somewhere in vacuum. It exerts a force on whatever charge we put into space. How do we know? We know this because we can measure an acceleration of the newly introduced charge. To be able to describe this force independent of how much charge we add to the space, we normalise this force and call it &lt;em&gt;electric field strength&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\vec{E} = \frac{\vec{F}}{e}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;The direction of force &lt;script type=&quot;math/tex&quot;&gt;\vec{F}&lt;/script&gt; and thus of electric field strength &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; is defined from the postive charge to the negative charge.&lt;/p&gt;
+
+&lt;p&gt;Now what happens when we put matter somewhere into our space? It depends whether you have a conductor or a non-conductor. Conductors have free charges, non-conductors have fixed charges.&lt;/p&gt;
+
+&lt;p&gt;When we put a conductor in a space with an electric field, the electric exerts forces on the freely movable charge in the conductor and they arrange such that they create an electric field of their own (internal electric field) which has the exactly opposite direction of the external electric field and exactly the same electric field strength. The sum of the external and internal electric field is zero, so there is no electric field inside the conductor.&lt;/p&gt;
+
+&lt;p&gt;What happens when we have a non-conductor? Here we have fixed charges. The external electric field causes the charges shift a little bit: electrical dipoles are induced! They are arranged such the they weaken the electrical field. Electrical dipoles are described mathematically by the electric dipole moment:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \vec{p} = e\vec{x}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt; is how much positive charge the dipole has. The magnitude of &lt;script type=&quot;math/tex&quot;&gt;\vec{x}&lt;/script&gt; is the distance between the positive and negative charge. &lt;strong&gt;The orientation of the dipole is defined from negative to positive (opposed to the electric field!)&lt;/strong&gt;. Now comes the confusion causer: &lt;strong&gt;The electric field and the induced electric moments have the same orientation! (this is important to know)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now we define a macroscopic expression for the induced electric dipole moment: How much induced dipole moments per volume &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt; do I have? (density of electric moments). This is called &lt;em&gt;polarisation&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;\vec{P}&lt;/script&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \vec{P} = \frac{\sum{p_i}}{V}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;Now back to the physics: As we see because of the movement of charges in conductors and shift of charges in non-conductors the electrical field strength outside of the material is always different from inside of the material:  &lt;script type=&quot;math/tex&quot;&gt;\vec{E}_{internal} \neq \vec{E}_{external}&lt;/script&gt;. In conductors: &lt;script type=&quot;math/tex&quot;&gt;\vec{E}_{internal} = 0&lt;/script&gt;, in non-conductors: &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\vec{E}_{internal} &lt; \vec{E}_{external} %]]&gt;&lt;/script&gt;. Is there any quantity whose value is independent of the material? Yes, the electric flux density &lt;script type=&quot;math/tex&quot;&gt;\vec{D}&lt;/script&gt;!:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \vec{D} = \epsilon_0 \vec{E} + \vec{P}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Confusion causer: with &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; we now mean &lt;script type=&quot;math/tex&quot;&gt;\vec{E}_{internal}&lt;/script&gt;!&lt;/strong&gt;. Also note that &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\vec{P}&lt;/script&gt; have the same orientation! So somehow &lt;script type=&quot;math/tex&quot;&gt;\vec{D} \propto E_{external}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;E_{external}&lt;/script&gt; is of course independent of the material.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Confusion causer: &lt;script type=&quot;math/tex&quot;&gt;\epsilon_0 \vec{E}&lt;/script&gt;:&lt;/strong&gt; Please note that the electric displacement field is &lt;strong&gt;just a definition&lt;/strong&gt;. Don’t try to overinterpret it &lt;script type=&quot;math/tex&quot;&gt;\epsilon_0 \vec{E}&lt;/script&gt;. The internal electric field &lt;script type=&quot;math/tex&quot;&gt;\vec{E}_{internal}&lt;/script&gt; and the polarisation &lt;script type=&quot;math/tex&quot;&gt;\vec{P}&lt;/script&gt; are somehow added up together and result in a quantity which is independent of the material.&lt;/p&gt;
+
+&lt;p&gt;What is the intuition behind the electric displacement field &lt;script type=&quot;math/tex&quot;&gt;\vec{D}&lt;/script&gt;? &lt;script type=&quot;math/tex&quot;&gt;\vec{D}&lt;/script&gt; is also called the &lt;em&gt;electric flux density&lt;/em&gt; with a unit of &lt;script type=&quot;math/tex&quot;&gt;\frac{C}{m^2}&lt;/script&gt;. It is a measure of how many electric field lines per area we have: fields lines of &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; and field lines of &lt;script type=&quot;math/tex&quot;&gt;\vec{P}&lt;/script&gt;. I think this is why we define the orientation of the dipoles from negative to positive: to be able to imagine &lt;script type=&quot;math/tex&quot;&gt;\vec{D}&lt;/script&gt; better (there is probably a more mathematical reason behind it, but I think like this unless something bad happens).&lt;/p&gt;
+
+&lt;p&gt;Now want to have a look at the relationship between the internal electric field with the strength &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; and polarisation &lt;script type=&quot;math/tex&quot;&gt;\vec{P}&lt;/script&gt;. It should be like this: when the material is more polarised, the original external field in the material is more weakened so the internal field strength &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; decreases and vice versa. We can measure a proportionality constant between &lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\vec{P}&lt;/script&gt; (for linear materials):&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \frac{\vec{P}}{\vec{E}} = \epsilon_0 \chi = \epsilon_0 (\epsilon_r - 1)
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\epsilon_r&lt;/script&gt; is the relative permeability (dimensionless) and somehow describes how “easily” one material gets polarised. Higher &lt;script type=&quot;math/tex&quot;&gt;\epsilon_r&lt;/script&gt; means that the “portion” of the polarisation in the material is higher compared to the internal electrical field. &lt;script type=&quot;math/tex&quot;&gt;\chi&lt;/script&gt; is called the electric susceptibility and like &lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt; (they are more or less the same) how “easily” a material gets polarised.&lt;/p&gt;
+
+&lt;p&gt;Using this equation we get a more simplified expression for the electric flux density (electric displacement field):&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \vec{D} = \epsilon_0 \vec{E} + \vec{P} =  \epsilon_0 \vec{E} + \epsilon_0 (\epsilon_r - 1) \vec{E} = \epsilon_0 \epsilon_r \vec{E}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;Generally in real dielectric materials the polarisation does depend on orientation of the applied electric field because they are not completely symmetric. For example an electric field applied in &lt;script type=&quot;math/tex&quot;&gt;\vec{x}&lt;/script&gt; direction may cause a higher density of dipoles (polarisation) than an electric field in &lt;script type=&quot;math/tex&quot;&gt;\vec{y}&lt;/script&gt; direction. Also an electric field applied in one direction may cause in a polarisation with a different orientation. That’s why the electric susceptibility is generally a matrix: &lt;script type=&quot;math/tex&quot;&gt;\chi_{ij}&lt;/script&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  P_i = \epsilon_0 \sum_{j}{\chi_{ij} E_j}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;How can we intuitively understand &lt;script type=&quot;math/tex&quot;&gt;\chi_{ij}&lt;/script&gt;? The first index &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; has always something to do with the result (&lt;script type=&quot;math/tex&quot;&gt;\vec{P}&lt;/script&gt;). The second index &lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt; has always something to do with the input (&lt;script type=&quot;math/tex&quot;&gt;\vec{E}&lt;/script&gt;). &lt;script type=&quot;math/tex&quot;&gt;\chi_{21}&lt;/script&gt; for example describes the “influence” of the first component of the electric field (&lt;script type=&quot;math/tex&quot;&gt;E_x&lt;/script&gt;) on the second component of the polarisation (&lt;script type=&quot;math/tex&quot;&gt;P_y&lt;/script&gt;). So for example if &lt;script type=&quot;math/tex&quot;&gt;\chi_{21}&lt;/script&gt; is non-zero and every other component of the matrix is zero we only get a polarisation if we apply an electric field in &lt;script type=&quot;math/tex&quot;&gt;\vec{x}&lt;/script&gt; direction and the resulted polarisation is in &lt;script type=&quot;math/tex&quot;&gt;\vec{y}&lt;/script&gt; direction (strange behaviour though).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/capacitor.svg&quot; alt=&quot;capacitor&quot; height=&quot;50%&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Light and matter - A description based on a quantum mechanical two-level system and a classical electric field</title>
@@ -189,43 +263,6 @@ H_{fi} = \left&lt; f \middle| \hat{H} \middle| i \right&gt; %]]&gt;&lt;/script&g
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 H_{fi} = \left&lt; f \middle| \hat{H} \middle| i \right&gt; = \int{\psi_f^* \hat{H} \psi_i dx} %]]&gt;&lt;/script&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>The meaning of the Electric Displacement</title>
-   <link href="/2020/04/05/meaning-electric-displacement"/>
-   <updated>2020-04-05T00:00:00+02:00</updated>
-   <id>/2020/04/05/meaning-electric-displacement</id>
-   <content type="html">&lt;p&gt;Consider the simplest capacitor as shown in the figure. Between the two plates a dielectric material (non-conductor) is placed. As the electric field of the capacitor passes through the material, it induces electric dipole moments. The sum of the induced dipole moments per volume is called &lt;em&gt;Polarization&lt;/em&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P = \frac{\sum{ex(t)}}{V}&lt;/script&gt;,&lt;/p&gt;
-
-&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;x(t)&lt;/script&gt; being the distance between the positive core of the atom and the electron with charge &lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt; and volume &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now these small dipole moments are microscopic capacitors by themselves and induce an electrical field that has the opposite direction compared to the external electric field. This leads to a decreased electric field inside of the material.&lt;/p&gt;
-
-&lt;p&gt;The strength of the field inside the material is described by the &lt;em&gt;electric Displacement&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;D&lt;/script&gt;:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;D = \epsilon_0 E + P&lt;/script&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;D&lt;/script&gt; has the unit of charge per area.&lt;/p&gt;
-
-&lt;p&gt;Now the polasization by itself depends on the external field:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;P = \epsilon_0 \chi E&lt;/script&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\chi&lt;/script&gt; is material-dependent and describes how “easily” can dipole moments be induced in the material. With this equation we get for the electric displacement:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;D = E(\epsilon_0 + \epsilon_0 \chi)&lt;/script&gt;
-
-&lt;p&gt;We define the relative permeability as &lt;script type=&quot;math/tex&quot;&gt;\epsilon = 1 + \chi&lt;/script&gt; and finally get for the displacement field:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;D = \epsilon_0 \epsilon E&lt;/script&gt;
-
-&lt;p&gt;This equation describes the strength of the electric field inside a material.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/capacitor.svg&quot; alt=&quot;capacitor&quot; height=&quot;50%&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
 </content>
  </entry>
  

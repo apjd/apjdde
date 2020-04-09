@@ -1,0 +1,67 @@
+I"#<p>There are some things that have caused a lot of confusion for me when I did electrodynamics, a lot of them spawn when matter comes into play. One of those things is the <em>electric displacement</em>.</p>
+
+<p>In electrodynamics, <em>electric field strength</em>, <em>electric flux</em>, <em>electric flux density</em>, <em>magnetic field strength</em>, <em>magnetic flux</em>, and <em>magnetic flux density</em> are different things.</p>
+
+<p>Consider a <strong>fixed</strong> positive charge somewhere in vacuum. It exerts a force on whatever charge we put into space. How do we know? We know this because we can measure an acceleration of the newly introduced charge. To be able to describe this force independent of how much charge we add to the space, we normalise this force and call it <em>electric field strength</em> <script type="math/tex">\vec{E}</script>:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+\vec{E} = \frac{\vec{F}}{e}
+\end{equation}</script>
+
+<p>The direction of force <script type="math/tex">\vec{F}</script> and thus of electric field strength <script type="math/tex">\vec{E}</script> is defined from the postive charge to the negative charge.</p>
+
+<p>Now what happens when we put matter somewhere into our space? It depends whether you have a conductor or a non-conductor. Conductors have free charges, non-conductors have fixed charges.</p>
+
+<p>When we put a conductor in a space with an electric field, the electric exerts forces on the freely movable charge in the conductor and they arrange such that they create an electric field of their own (internal electric field) which has the exactly opposite direction of the external electric field and exactly the same electric field strength. The sum of the external and internal electric field is zero, so there is no electric field inside the conductor.</p>
+
+<p>What happens when we have a non-conductor? Here we have fixed charges. The external electric field causes the charges shift a little bit: electrical dipoles are induced! They are arranged such the they weaken the electrical field. Electrical dipoles are described mathematically by the electric dipole moment:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \vec{p} = e\vec{x}
+\end{equation}</script>
+
+<p><script type="math/tex">e</script> is how much positive charge the dipole has. The magnitude of <script type="math/tex">\vec{x}</script> is the distance between the positive and negative charge. <strong>The orientation of the dipole is defined from negative to positive (opposed to the electric field!)</strong>. Now comes the confusion causer: <strong>The electric field and the induced electric moments have the same orientation! (this is important to know)</strong>.</p>
+
+<p>Now we define a macroscopic expression for the induced electric dipole moment: How much induced dipole moments per volume <script type="math/tex">V</script> do I have? (density of electric moments). This is called <em>polarisation</em> <script type="math/tex">\vec{P}</script>:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \vec{P} = \frac{\sum{p_i}}{V}
+\end{equation}</script>
+
+<p>Now back to the physics: As we see because of the movement of charges in conductors and shift of charges in non-conductors the electrical field strength outside of the material is always different from inside of the material:  <script type="math/tex">\vec{E}_{internal} \neq \vec{E}_{external}</script>. In conductors: <script type="math/tex">\vec{E}_{internal} = 0</script>, in non-conductors: <script type="math/tex">% <![CDATA[
+\vec{E}_{internal} < \vec{E}_{external} %]]></script>. Is there any quantity whose value is independent of the material? Yes, the electric flux density <script type="math/tex">\vec{D}</script>!:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \vec{D} = \epsilon_0 \vec{E} + \vec{P}
+\end{equation}</script>
+
+<p><strong>Confusion causer: with <script type="math/tex">\vec{E}</script> we now mean <script type="math/tex">\vec{E}_{internal}</script>!</strong>. Also note that <script type="math/tex">\vec{E}</script> and <script type="math/tex">\vec{P}</script> have the same orientation! So somehow <script type="math/tex">\vec{D} \propto E_{external}</script> and <script type="math/tex">E_{external}</script> is of course independent of the material.</p>
+
+<p><strong>Confusion causer: <script type="math/tex">\epsilon_0 \vec{E}</script>:</strong> Please note that the electric displacement field is <strong>just a definition</strong>. Don’t try to overinterpret it <script type="math/tex">\epsilon_0 \vec{E}</script>. The internal electric field <script type="math/tex">\vec{E}_{internal}</script> and the polarisation <script type="math/tex">\vec{P}</script> are somehow added up together and result in a quantity which is independent of the material.</p>
+
+<p>What is the intuition behind the electric displacement field <script type="math/tex">\vec{D}</script>? <script type="math/tex">\vec{D}</script> is also called the <em>electric flux density</em> with a unit of <script type="math/tex">\frac{C}{m^2}</script>. It is a measure of how many electric field lines per area we have: fields lines of <script type="math/tex">\vec{E}</script> and field lines of <script type="math/tex">\vec{P}</script>. I think this is why we define the orientation of the dipoles from negative to positive: to be able to imagine <script type="math/tex">\vec{D}</script> better (there is probably a more mathematical reason behind it, but I think like this unless something bad happens).</p>
+
+<p>Now want to have a look at the relationship between the internal electric field with the strength <script type="math/tex">\vec{E}</script> and polarisation <script type="math/tex">\vec{P}</script>. It should be like this: when the material is more polarised, the original external field in the material is more weakened so the internal field strength <script type="math/tex">\vec{E}</script> decreases and vice versa. We can measure a proportionality constant between <script type="math/tex">\vec{E}</script> and <script type="math/tex">\vec{P}</script> (for linear materials):</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \frac{\vec{P}}{\vec{E}} = \epsilon_0 \chi = \epsilon_0 (\epsilon_r - 1)
+\end{equation}</script>
+
+<p><script type="math/tex">\epsilon_r</script> is the relative permeability (dimensionless) and somehow describes how “easily” one material gets polarised. Higher <script type="math/tex">\epsilon_r</script> means that the “portion” of the polarisation in the material is higher compared to the internal electrical field. <script type="math/tex">\chi</script> is called the electric susceptibility and like <script type="math/tex">\epsilon</script> (they are more or less the same) how “easily” a material gets polarised.</p>
+
+<p>Using this equation we get a more simplified expression for the electric flux density (electric displacement field):</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  \vec{D} = \epsilon_0 \vec{E} + \vec{P} =  \epsilon_0 \vec{E} + \epsilon_0 (\epsilon_r - 1) \vec{E} = \epsilon_0 \epsilon_r \vec{E}
+\end{equation}</script>
+
+<p>Generally in real dielectric materials the polarisation does depend on orientation of the applied electric field because they are not completely symmetric. For example an electric field applied in <script type="math/tex">\vec{x}</script> direction may cause a higher density of dipoles (polarisation) than an electric field in <script type="math/tex">\vec{y}</script> direction. Also an electric field applied in one direction may cause in a polarisation with a different orientation. That’s why the electric susceptibility is generally a matrix: <script type="math/tex">\chi_{ij}</script>:</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+  P_i = \epsilon_0 \sum_{j}{\chi_{ij} E_j}
+\end{equation}</script>
+
+<p>How can we intuitively understand <script type="math/tex">\chi_{ij}</script>? The first index <script type="math/tex">i</script> has always something to do with the result (<script type="math/tex">\vec{P}</script>). The second index <script type="math/tex">j</script> has always something to do with the input (<script type="math/tex">\vec{E}</script>). <script type="math/tex">\chi_{21}</script> for example describes the “influence” of the first component of the electric field (<script type="math/tex">E_x</script>) on the second component of the polarisation (<script type="math/tex">P_y</script>). So for example if <script type="math/tex">\chi_{21}</script> is non-zero and every other component of the matrix is zero we only get a polarisation if we apply an electric field in <script type="math/tex">\vec{x}</script> direction and the resulted polarisation is in <script type="math/tex">\vec{y}</script> direction (strange behaviour though).</p>
+
+<p><img src="/assets/images/capacitor.svg" alt="capacitor" height="50%" width="50%" /></p>
+:ET
