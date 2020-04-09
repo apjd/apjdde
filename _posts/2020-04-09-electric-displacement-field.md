@@ -3,7 +3,7 @@ layout: post
 title: The electric flux density (displacement field)
 description:
 summary:
-tags: [physics]
+tags: [physics, classical_electrodynamics]
 ---
 
 There are some things that have caused a lot of confusion for me when I did electrodynamics, a lot of them spawn when matter comes into play. One of those things is the <em>electric displacement</em>.
