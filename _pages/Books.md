@@ -6,6 +6,7 @@ title: Books
 ### Reading:
   - "Electrons in Solids" by Hendrik Bluhm, Thomas Brückel, Markus Morgenstern, Gero von Plessen and Christoph Stampfer
   - "How not to be wrong" by Jordan Ellenberg
+  - "The Subtle Art of Not Giving a F*ck" by Mark Manson 
 
 ### Read:
   - "The Body" by Bill Bryson (April 2020)
